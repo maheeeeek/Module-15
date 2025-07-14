@@ -1,13 +1,13 @@
 const express = require('express');
 const app = express();
-const port = 5000;
+const port = 4000;
 
 app.get("/get", (req,res) => {
-    res.sendFile("I am get request")
+    res.send("I am get request")
 });
 
 app.post("/post", (req,res) => {
-    res.sendFile("I am post request")
+    res.send("I am post request")
 });
 
 
